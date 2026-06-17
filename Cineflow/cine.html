@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineflow Creator Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Join To Cineflow</h1>
+    </header>
+    <form action="register.php" method="POST">
+        <label for="Full Name">Full Name:</label>
+        <input type="text" id="Full Name" name="Full Name" placeholder="Enter your full name" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9_]{3,20}$" placeholder="Enter your username" title="Username must be 3-20 characters long and contain only letters, numbers, and underscores" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+        <label for="DOB".>Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB" required><br><br>
+
+        <label for="upload 0 to 10 videos">Upload 0 to 10 Videos:</label>
+        <input type="file" id="upload 0 to 10 videos" name="upload 0 to 10 videos" multiple><br><br>
+
+        <label for="upload profile picture">Upload Profile Picture:</label>
+        <input type="file" id="upload profile picture" name="upload profile picture" accept="image/*"><br><br>
+
+        <p>choose your favorite genres</p>
+        <input type="checkbox" id="genre1" name="genres[]" value="Technology">
+        <label for="genre1">Technology</label><br>
+        <input type="checkbox" id="genre2" name="genres[]" value="Gaming">
+        <label for="genre2">Gaming</label><br>
+        <input type="checkbox" id="genre3" name="genres[]" value="Lifestyle">
+        <label for="genre3">Lifestyle</label><br>
+        <input type="checkbox" id="genre4" name="genres[]" value="Education">
+        <label for="genre4">Education</label><br>
+        <button type="submit">Register</button>
+
+    </form>
+
+    <h2>promo videos</h2>
+    <video width="320" height="240" controls>
+        <source src="promo1.mp4" type="video/mp4">
+
+    </video>
+    <audio controls>
+        <source src="promo1.mp3" type="audio/mpeg">
+    </audio>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </fieldset>
+</body>
+</html>
