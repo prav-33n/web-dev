@@ -7,4 +7,4 @@ It offers trainers who guid customers in there fitness journey as well as offer 
 ## INSTALLATION
 
 ```bash
-git clone 
+git clone companylandingpage/index.html
